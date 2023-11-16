@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Jokes</title>
+    <style>
+       body {
+   background-image: url(bg.jpg);
+   background-size: cover;
+   background-position: center;
+    margin: 0;
+    height: 100vh;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    border: 2px solid gray;
+    border-radius: 10px;
+    box-shadow: 0 5px 80px rgb(246, 214, 4);
+    background-color: white;
+    
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h3 {
+    color: black;
+    font-size: 25px;
+}
+
+.joke {
+    font-size: 20px;
+    padding: 20px 10px;
+    margin: 10px;
+    color: black;
+}
+
+.btn {
+    background-color: #FFAD03;
+    color: black;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+/* Media query for smaller screens (e.g., tablets) */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+
+/* Media query for even smaller screens (e.g., mobile phones) */
+@media screen and (max-width: 480px) {
+    .container {
+        width: 80%;
+        height: auto;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    .joke {
+        font-size: 18px;
+    }
+    .btn {
+        font-size: 0.9em;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Best Jokes to make ur Day !!!</h3>
+        <div class="joke" id="joke">Awesome Joke is Loading...</div>
+        <buttton class="btn" id="jokebtn">Next Joke</buttton>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
